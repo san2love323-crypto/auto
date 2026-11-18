@@ -1,0 +1,39 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "yujun566.autoplay",
+	"name": "Auto Play",
+	"version": "v1.0.0",
+	"developer": "yujun566",
+	"description": "Plays levels by itself. Reads the real obstacles, orbs and gamemode from the game, so no hitboxes are needed.",
+	"tags": [
+		"gameplay",
+		"offline"
+	],
+	"settings": {
+		"enabled": {
+			"name": "Auto play",
+			"description": "The mod presses jump for you. Can also be switched from the pause menu.",
+			"type": "bool",
+			"default": true
+		},
+		"look-ahead": {
+			"name": "Look-ahead (seconds)",
+			"description": "How far ahead jumps are simulated. Higher = plans further but uses more CPU.",
+			"type": "float",
+			"default": 1.0,
+			"min": 0.4,
+			"max": 1.5
+		},
+		"fly-ahead": {
+			"name": "Flying aim distance (seconds)",
+			"description": "How far ahead the ship / wave / ufo aims. Lower = reacts later but hugs tight gaps better.",
+			"type": "float",
+			"default": 0.22,
+			"min": 0.08,
+			"max": 0.6
+		}
+	}
+}
